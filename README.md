@@ -2,13 +2,6 @@
 
 ## Objective: server that recieves name of a city and sends back temperature in that city
 
-## Technologies used:
-
-- Typescript
-- Node with Express
-- Docker
-- Doppler
-
 According to requirements, application is developed for develoment environment _only_.
 
 ## Technologies and application flow:
@@ -52,6 +45,7 @@ Auto language is English, no need to configure it.
 ### Run project
 
 ```
+cp .env.example .env
 docker compose up -d
 ```
 

@@ -2,7 +2,7 @@ import express, { Express, Request, Response } from "express";
 import cors from "cors";
 import helmet from "helmet";
 import { config } from "dotenv";
-import { corsConfig } from "../corsConfig";
+import { corsConfig } from "./corsConfig";
 import router from "./routes";
 
 const app: Express = express();
