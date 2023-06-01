@@ -6,7 +6,6 @@
 
 - Typescript
 - Node with Express
-- Redis
 - Docker
 - Doppler
 
@@ -21,7 +20,6 @@ Used:
 - Helmet for headers security
 - Disabled cors (temporarily)
 - Husky, Eslint, Prettier
-- Redis
 - Docker
 
 POST route is created:
@@ -42,9 +40,6 @@ City name validation:
 
 - only letters, spaces, dashes
 - API accepts cities with typos, does autocomplete, accepts in lower case as well.
-
-City name is searched in Redis, only in case if it is not found, request is made to external API and saved in Redis (5 min ttl).
-Feature is implemented to reduce amount of external API calls with multiple server users.
 
 ### External API - Weather API for current moment <https://api.weatherapi.com/v1/current.json>
 
